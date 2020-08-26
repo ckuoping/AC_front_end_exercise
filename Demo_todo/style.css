@@ -1,0 +1,71 @@
+/* background */
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: Arial, Helvetica, sans-serif, "Microsoft JhengHei", "微軟正黑體";
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.wrapper {
+    background: #F5F5F5;
+    opacity: 0.8;
+}
+
+.wrapper div {
+    margin-bottom: 40px;
+}
+
+.wrapper h4 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    color: #303030;
+}
+
+.wrapper h6 {
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #D4D4D4;
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+    color: #595959;
+}
+
+.wrapper h6 i {
+    margin-right: 10px;
+}
+
+.wrapper ul {
+    background: white;
+    margin-top: 10px;
+    padding: 10px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.checked {
+    color: #ccc;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.fa {
+    margin: 0 5px;
+    color: #bbb;
+}
+
+li>label[for='todo'] {
+    width: 210px;
+}
