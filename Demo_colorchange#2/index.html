@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="board col-md-8 col-lg-8 rounded border shadow-lg">
+                <div class="writeIn d-flex justify-content-between">
+                    <div class="inputArea">
+                        <h2>RGB</h2>
+                        <div class="color-group d-flex align-items-center mb-3">
+                            <div class="color-title">R:</div>
+                            <input type="number" id="red-value" class="rounded border mr-2 pl-1 color-input" value="0" min="0" max="255">
+                            <div id="red-square" class="color-square rounded border"></div>
+                        </div>
+                        <div class="color-group d-flex align-items-center mb-3">
+                            <div class="color-title">G:</div>
+                            <input type="number" id="green-value" class="rounded border mr-2 pl-1 color-input" value="0" min="0" max="255">
+                            <div id="green-square" class="color-square rounded border"></div>
+                        </div>
+                        <div class="color-group d-flex align-items-center mb-3">
+                            <div class="color-title">B:</div>
+                            <input type="number" id="blue-value" class="rounded border mr-2 pl-1 color-input" value="0" min="0" max="255">
+                            <div id="blue-square" class="color-square rounded border"></div>
+                        </div>
+                    </div>
+                    <div class="outputArea">
+                        <h2>HEX</h2>
+                        <input type="text" class="rounded border pl-1 color-output">
+                        <div class="color-result mt-2 rounded border"></div>
+                    </div>
+                </div>
+                <div class="covert-btn p-0">
+                    <button type="button" class="btn btn-primary ">Convert</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
